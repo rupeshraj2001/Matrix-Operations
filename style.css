@@ -1,0 +1,312 @@
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    margin: 0;
+    padding: 40px;
+    color: #333;
+  } */
+
+
+
+  * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+  body {
+    background: linear-gradient(to right, #dbe6f6, #c5796d);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav {
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+nav dev {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+    animation: popUp 2s infinite ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+/* Keyframes for smooth popup-like scaling effect */
+@keyframes popUp {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2) rotate(5deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+nav h1 {
+    font-size: 24px;
+    margin-left: 50px;
+    display: inline-block;
+    animation: popSide 2.5s infinite ease-in-out;
+    transition: transform 0.3s ease;
+   /* Warm 3D effect */
+    color: #0abde3;
+    text-shadow:
+        1px 1px 0 #5f27cd,
+        2px 2px 0 #341f97,
+        3px 3px 0 #2e86de,
+        4px 4px 5px rgba(0, 0, 0, 0.2);
+}
+/* Keyframes for side pop/wobble effect */
+@keyframes popSide {
+    0% {
+        transform: scale(1) translateX(0);
+    }
+    25% {
+        transform: scale(1.1) translateX(5px);
+    }
+    50% {
+        transform: scale(1.2) translateX(-5px);
+    }
+    75% {
+        transform: scale(1.1) translateX(3px);
+    }
+    100% {
+        transform: scale(1) translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .input-section, .matrix-section, .result-section {
+    /* background: #fff; */
+    padding: 20px;
+    /* border-radius: 12px; */
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+    
+  }
+
+  .input-section:hover,
+  .matrix-section:hover,
+  .result-section:hover {
+    transform: scale(1.01);
+  }
+  
+  label {
+    font-weight: 600;
+    margin-right: 15px;
+  }
+  
+  input[type="number"] {
+    width: 70px;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-right: 15px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="number"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  /* button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+  } */
+
+
+
+  button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px #c0392b; /* 3D shadow */
+    transition: all 0.2s ease-in-out;
+    transform: translateY(0);
+}
+
+ button:hover {
+    background-color: #c0392b;
+    box-shadow: 0 3px #922b21;
+    transform: translateY(2px); /* 3D press effect */
+}
+
+
+
+
+
+
+  
+  .matrix-table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: fit-content;
+  }
+  
+  .matrix-table td {
+    padding: 5px;
+  }
+  
+  .matrix-table input {
+    width: 60px;
+    height: 35px;
+    padding: 5px;
+    border: 2px solid #aaa;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+    transition: border-color 0.3s ease;
+  }
+  
+  .matrix-table input:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  .result-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .result-section table {
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .result-section td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+  }  
+
+
+
+
+
+  /* body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    padding: 40px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .input-section {
+    flex: 1;
+    min-width: 250px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 180px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="number"] {
+    width: 100px;
+    padding: 8px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  } */
